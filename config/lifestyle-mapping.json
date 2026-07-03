@@ -1,0 +1,151 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Lifestyle / vague term → structured filter mappings. Add new entries here without touching source code.",
+  "version": "1.0.0",
+  "lifestyleMappings": {
+    "familienauto": {
+      "description": "Family car",
+      "bodyTypes": ["Avant", "allroad quattro", "SUV"],
+      "seriesHints": ["A5", "A6", "Q3", "Q5", "Q7", "Q8"]
+    },
+    "family car": {
+      "description": "Family car",
+      "bodyTypes": ["Avant", "allroad quattro", "SUV"],
+      "seriesHints": ["A5", "A6", "Q3", "Q5", "Q7", "Q8"]
+    },
+    "family": {
+      "bodyTypes": ["Avant", "allroad quattro", "SUV"],
+      "seriesHints": ["A5", "A6", "Q3", "Q5", "Q7", "Q8"]
+    },
+    "sportlich": {
+      "description": "Sporty vehicle",
+      "seriesPrefixes": ["S", "RS"],
+      "bodyTypes": ["sportscar", "Sportback"]
+    },
+    "sporty": {
+      "description": "Sporty vehicle",
+      "seriesPrefixes": ["S", "RS"],
+      "bodyTypes": ["sportscar", "Sportback"]
+    },
+    "sport": {
+      "seriesPrefixes": ["S", "RS"],
+      "bodyTypes": ["sportscar", "Sportback"]
+    },
+    "kompakt": {
+      "description": "Compact car",
+      "seriesHints": ["A1", "A3", "Q2", "Q3"]
+    },
+    "compact": {
+      "description": "Compact car",
+      "seriesHints": ["A1", "A3", "Q2", "Q3"]
+    },
+    "klein": {
+      "description": "Small car",
+      "seriesHints": ["A1", "A2", "Q2"]
+    },
+    "small": {
+      "seriesHints": ["A1", "A2", "Q2"]
+    },
+    "elektrisch": {
+      "description": "Electric vehicle (BEV)",
+      "vehicleTypes": ["BEV"]
+    },
+    "electric": {
+      "description": "Electric vehicle (BEV)",
+      "vehicleTypes": ["BEV"]
+    },
+    "e-auto": {
+      "vehicleTypes": ["BEV"]
+    },
+    "ev": {
+      "vehicleTypes": ["BEV"]
+    },
+    "hybrid": {
+      "description": "Plug-in hybrid (PHEV)",
+      "vehicleTypes": ["PHEV"]
+    },
+    "phev": {
+      "vehicleTypes": ["PHEV"]
+    },
+    "plug-in": {
+      "vehicleTypes": ["PHEV"]
+    },
+    "plug-in hybrid": {
+      "vehicleTypes": ["PHEV"]
+    },
+    "benzin": {
+      "description": "Petrol/gasoline ICE vehicle",
+      "vehicleTypes": ["ICEV"]
+    },
+    "petrol": {
+      "vehicleTypes": ["ICEV"]
+    },
+    "gasoline": {
+      "vehicleTypes": ["ICEV"]
+    },
+    "diesel": {
+      "description": "Diesel vehicle",
+      "vehicleTypes": ["ICEV"],
+      "fuelHint": "diesel"
+    },
+    "luxus": {
+      "description": "Luxury vehicle",
+      "seriesHints": ["A6", "A7", "A8", "Q7", "Q8", "e-tron GT"]
+    },
+    "luxury": {
+      "description": "Luxury vehicle",
+      "seriesHints": ["A6", "A7", "A8", "Q7", "Q8", "e-tron GT"]
+    },
+    "suv": {
+      "description": "SUV body type",
+      "bodyTypes": ["SUV", "suv", "allroad quattro"]
+    },
+    "geländewagen": {
+      "bodyTypes": ["SUV", "allroad quattro"]
+    },
+    "kombi": {
+      "description": "Estate/wagon",
+      "bodyTypes": ["Avant", "allroad quattro"]
+    },
+    "estate": {
+      "bodyTypes": ["Avant", "allroad quattro"]
+    },
+    "wagon": {
+      "bodyTypes": ["Avant", "allroad quattro"]
+    },
+    "limousine": {
+      "description": "Sedan",
+      "bodyTypes": ["Limousine", "limo"]
+    },
+    "sedan": {
+      "bodyTypes": ["Limousine", "limo"]
+    },
+    "cabrio": {
+      "description": "Convertible",
+      "bodyTypes": ["cabriolet"]
+    },
+    "cabriolet": {
+      "bodyTypes": ["cabriolet"]
+    },
+    "convertible": {
+      "bodyTypes": ["cabriolet"]
+    },
+    "coupe": {
+      "bodyTypes": ["sportscar", "Sportback"]
+    },
+    "coupé": {
+      "bodyTypes": ["sportscar", "Sportback"]
+    }
+  },
+  "validVehicleTypes": ["ICEV", "BEV", "PHEV", "MHEV"],
+  "validBodyTypes": [
+    "sportback", "allstreet", "Limousine", "Sportback", "Avant",
+    "allroad quattro", "limo", "sportscar", "compact", "SUV", "suv", "cabriolet"
+  ],
+  "sortOptions": {
+    "OLDEST_IN_LOT": "Älteste Fahrzeuge zuerst (Standard)",
+    "NEWEST_IN_LOT": "Neueste Fahrzeuge zuerst",
+    "LOWEST_MILEAGE": "Geringste Laufleistung zuerst",
+    "HIGHEST_MILEAGE": "Höchste Laufleistung zuerst"
+  }
+}
