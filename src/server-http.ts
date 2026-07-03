@@ -22,7 +22,7 @@ import {
 
 const SERVER_NAME = "audi-vtp-mcp-server";
 const SERVER_VERSION = "1.0.0";
-const PORT = parseInt(process.env.PORT ?? "3000");
+const PORT = parseInt(process.env.PORT ?? "8080");
 
 function log(level: "info" | "warn" | "error", message: string, data?: unknown) {
   const ts = new Date().toISOString();
